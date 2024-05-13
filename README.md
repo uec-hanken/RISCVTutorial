@@ -110,7 +110,7 @@ Build the bitstream with your selected configuration.
 make SUB_PROJECT=vc707_rocketsmall bitstream
 ```
 
-After generating ".bit" file, connect the Arty board to your PC (make sure that the rules for Digilent cable are defined beforehand). Then program the board.
+After generating ".bit" file, connect the VC707 board to your PC (make sure that the rules for Digilent cable are defined beforehand). Then program the board.
 ```shell
 make download_bitstream
 ```
