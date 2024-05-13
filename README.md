@@ -33,14 +33,7 @@ Active coda first
 ```shell
 conda activate
 ```
-
-Then bulid the chipyard related tools
-
-```shell
-./build-setup.sh riscv-tools
-```
-
-In case that FireMarshal corrupt, install without FireMarshal
+Then build the related tools
 
 ```shell
 ./build-setup.sh -s 9 -s 8 riscv-tools
