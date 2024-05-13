@@ -83,7 +83,7 @@ Then format the SD Card with the following options:
 After formatting the SD Card, print the new partition and save the configurations.
 <img src="https://github.com/binhkieudo/riscv_framework/assets/22954544/a657a6da-617b-409a-8b2f-4f7ec7f96128" alt="drawing" width="700"/>
 
-## Build your first tiny FPGA prototype (currently support Arty100T)
+## Build your first tiny FPGA prototype (currently support Arty100T, VC707, VCU118)
 
 Vivado must be in your PATH
 
@@ -100,14 +100,14 @@ by
 rom.array() //++ subsystem.dtb.contents
 ```
 
-Enter fpga folder
+Enter framework folder
 ```shell
-cd fpga
+cd framework
 ```
 
 Build the bitstream with your selected configuration.
 ```shell
-make SUB_PROJECT=arty100tTiny bitstream
+make SUB_PROJECT=vc707_rocketsmall bitstream
 ```
 
 After generating ".bit" file, connect the Arty board to your PC (make sure that the rules for Digilent cable are defined beforehand). Then program the board.
