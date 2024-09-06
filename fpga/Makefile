@@ -14,7 +14,7 @@ sim_name := none
 #########################################################################################
 # include shared variables
 #########################################################################################
-SUB_PROJECT ?= vcu118
+SUB_PROJECT ?= arty
 
 ifeq ($(SUB_PROJECT),vc707)
 	SBT_PROJECT       ?= fpga_platforms
