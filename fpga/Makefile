@@ -60,11 +60,11 @@ endif
 ifeq ($(SUB_PROJECT),arty)
 	# TODO: Fix with Arty
 	SBT_PROJECT       ?= fpga_platforms
-	MODEL             ?= ArtyFPGATestHarness
-	VLOG_MODEL        ?= ArtyFPGATestHarness
-	MODEL_PACKAGE     ?= chipyard.fpga.arty
-	CONFIG            ?= TinyRocketArtyConfig
-	CONFIG_PACKAGE    ?= chipyard.fpga.arty
+	MODEL             ?= Arty35TwoDDRHarness
+	VLOG_MODEL        ?= Arty35TwoDDRHarness
+	MODEL_PACKAGE     ?= chipyard.fpga.arty35t
+	CONFIG            ?= SmallRocketArty35TConfig
+	CONFIG_PACKAGE    ?= chipyard.fpga.arty35t
 	GENERATOR_PACKAGE ?= chipyard
 	TB                ?= none # unused
 	TOP               ?= ChipTop
