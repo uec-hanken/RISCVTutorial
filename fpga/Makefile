@@ -57,7 +57,7 @@ ifeq ($(SUB_PROJECT),bringup)
 	BOARD             ?= vcu118
 	FPGA_BRAND        ?= xilinx
 endif
-ifeq ($(SUB_PROJECT),arty)
+ifeq ($(SUB_PROJECT),arty35t)
 	# TODO: Fix with Arty
 	SBT_PROJECT       ?= fpga_platforms
 	MODEL             ?= Arty35TwoDDRHarness
