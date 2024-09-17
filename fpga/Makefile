@@ -14,7 +14,7 @@ sim_name := none
 #########################################################################################
 # include shared variables
 #########################################################################################
-SUB_PROJECT ?= arty
+SUB_PROJECT ?= arty35t
 
 ifeq ($(SUB_PROJECT),vc707)
 	SBT_PROJECT       ?= fpga_platforms
@@ -57,7 +57,7 @@ ifeq ($(SUB_PROJECT),bringup)
 	BOARD             ?= vcu118
 	FPGA_BRAND        ?= xilinx
 endif
-ifeq ($(SUB_PROJECT),arty)
+ifeq ($(SUB_PROJECT),arty35t)
 	# TODO: Fix with Arty
 	SBT_PROJECT       ?= fpga_platforms
 	MODEL             ?= Arty35TwoDDRHarness
@@ -164,3 +164,4 @@ debug-bitstream: $(build_dir)/obj/post_synth.dcp
 .PHONY: clean
 clean:
 	rm -rf $(gen_dir)
+	rm -f $(base_dir)/.classpath_cache/*
